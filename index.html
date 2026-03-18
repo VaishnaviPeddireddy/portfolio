@@ -1,202 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vaishnavi Peddireddy | Portfolio</title>
+<meta charset="UTF-8">
+<title>Vaishnavi | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0f172a;
-      color: white;
-    }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    header {
-      text-align: center;
-      padding: 50px;
-      background: #1e293b;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0f0d;
+  color: white;
+}
 
-    h1 {
-      margin: 0;
-      color: #38bdf8;
-    }
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+}
 
-    h2 {
-      color: #38bdf8;
-      border-bottom: 2px solid #38bdf8;
-      padding-bottom: 5px;
-    }
+nav a {
+  color: #7CFC00;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    section {
-      padding: 20px 40px;
-    }
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
 
-    .project, .card {
-      background: #1e293b;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 10px;
-    }
+.hero-left {
+  width: 50%;
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.hero-left h1 {
+  font-size: 40px;
+  color: #7CFC00;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+.hero-right img {
+  width: 250px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
 
-    ul {
-      line-height: 1.8;
-    }
+/* SECTION */
+section {
+  padding: 60px;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 15px;
-      background: #38bdf8;
-      color: black;
-      border-radius: 5px;
-      text-decoration: none;
-    }
+/* CARDS */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-    .btn:hover {
-      background: #0ea5e9;
-    }
-  </style>
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  width: 45%;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* EXPAND */
+.details {
+  display: none;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* BUTTON */
+button {
+  background: #7CFC00;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Vaishnavi Peddireddy</h1>
-  <p>Cybersecurity & Cloud Engineer | AWS | DevSecOps</p>
+<!-- NAVBAR -->
+<nav>
+  <a href="#">Resume</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+</nav>
 
-  <a class="btn" href="https://github.com/yourusername" target="_blank">GitHub</a>
-  <a class="btn" href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-  <a class="btn" href="resume.pdf" download>Download Resume</a>
-</header>
-
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a Cybersecurity graduate student at Rowan University with experience in cloud security, DevSecOps, and automation.
-    I have worked with AWS, Azure, Terraform, and Docker to build secure and scalable systems.
-    I am passionate about securing cloud infrastructure and building efficient, scalable solutions.
-  </p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>AWS (EC2, S3, IAM, Lambda)</li>
-    <li>Terraform, Docker, CI/CD</li>
-    <li>Python, Java, SQL</li>
-    <li>Wireshark, SIEM, Incident Response</li>
-    <li>Azure, GCP, Cloud Security</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Experience</h2>
-
-  <div class="card">
-    <h3>DevSecOps Volunteer – Saayam For All (Remote)</h3>
-    <p>Aug 2025 – Present</p>
-    <ul>
-      <li>Implemented CI/CD pipelines and automated deployments.</li>
-      <li>Developed Infrastructure as Code using Pulumi.</li>
-      <li>Monitored vulnerabilities using SAST, DAST, and IAST tools.</li>
-    </ul>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <h1>Vaishnavi Peddireddy</h1>
+    <p>Cybersecurity & Cloud Engineer | DevSecOps</p>
   </div>
 
-  <div class="card">
-    <h3>Cloud Support Engineer – LTI Mindtree</h3>
-    <p>Dec 2022 – Nov 2023</p>
-    <ul>
-      <li>Resolved 100+ Azure subscription and networking issues.</li>
-      <li>Reduced downtime by 20% and improved satisfaction by 18%.</li>
-      <li>Automated billing audits reducing manual effort by 35%.</li>
-    </ul>
+  <div class="hero-right">
+    <img src="yourphoto.jpg">
   </div>
+</div>
 
-  <div class="card">
-    <h3>Graduate Cloud Trainee – LTI IGNITE Program</h3>
-    <p>Oct 2022 – Dec 2022</p>
-    <ul>
-      <li>Built secure AWS environments using EC2, S3, IAM.</li>
-      <li>Completed Terraform-based infrastructure projects.</li>
-    </ul>
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+
+<div class="container">
+
+<div class="card">
+  <img src="rowan.png" width="100%">
+  <h3>Rowan University</h3>
+  <p>Masters in Cybersecurity</p>
+</div>
+
+<div class="card">
+  <img src="mbu.png" width="100%">
+  <h3>Mohan Babu University</h3>
+  <p>Bachelor's in Computer Science</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Experience</h2>
+
+<div class="container">
+
+<div class="card">
+  <h3>DevSecOps Volunteer</h3>
+  <p>Worked on CI/CD pipelines</p>
+  <button onclick="toggle(this)">▼</button>
+  <div class="details">
+    Built secure pipelines and automated deployments using DevSecOps tools.
   </div>
+</div>
+
+<div class="card">
+  <h3>Cloud Support Engineer</h3>
+  <p>Azure troubleshooting & IAM</p>
+  <button onclick="toggle(this)">▼</button>
+  <div class="details">
+    Resolved 100+ issues and improved system uptime by 20%.
+  </div>
+</div>
+
+<div class="card">
+  <h3>Graduate Cloud Trainee</h3>
+  <p>AWS & Terraform projects</p>
+  <button onclick="toggle(this)">▼</button>
+  <div class="details">
+    Built AWS environments and automated infrastructure deployments.
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="container">
+
+<div class="card">
+  <h3>Student Grade Prediction</h3>
+  <p>ML model with 85% accuracy</p>
+  <a href="#">GitHub</a>
+</div>
+
+<div class="card">
+  <h3>Object Detection</h3>
+  <p>OpenCV system 95% accuracy</p>
+  <a href="#">GitHub</a>
+</div>
+
+</div>
+
+<h2>Skills</h2>
+<p>AWS | Python | DevSecOps | Terraform | Docker</p>
 
 </section>
 
+<!-- CONTACT -->
 <section>
-  <h2>Projects</h2>
+<h2>Contact</h2>
 
-  <div class="project">
-    <h3>Student Grade Prediction using SMOTE</h3>
-    <p>Built ML model achieving 85% accuracy.</p>
-    <p><strong>Tools:</strong> Python, ML</p>
-    <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a> |
-    <a href="https://ieeexplore.ieee.org/yourpaper" target="_blank">Publication</a>
-  </div>
-
-  <div class="project">
-    <h3>Object Detection System</h3>
-    <p>Achieved 95% accuracy using OpenCV.</p>
-    <p><strong>Tools:</strong> OpenCV, NumPy</p>
-    <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
-  </div>
+<p><i class="fas fa-envelope"></i> your@email.com</p>
+<p><i class="fas fa-phone"></i> +1 XXX XXX XXXX</p>
+<p><i class="fab fa-linkedin"></i> LinkedIn</p>
+<p><i class="fab fa-github"></i> GitHub</p>
 
 </section>
 
-<section>
-  <h2>Certifications</h2>
-  <ul>
-    <li>Google Cloud Cybersecurity Certification 
-      <a href="https://coursera.org/yourlink" target="_blank">View</a>
-    </li>
-    <li>ISC2 Certified in Cybersecurity 
-      <a href="https://isc2.org/yourlink" target="_blank">View</a>
-    </li>
-    <li>Salesforce Developer Internship 
-      <a href="https://yourlink.com" target="_blank">View</a>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>Contact</h2>
-
-  <p>
-    <i class="fas fa-envelope"></i>
-    <a href="mailto:peddireddyvaishnavi1290@gmail.com">peddireddyvaishnavi1290@gmail.com</a>
-  </p>
-
-  <p>
-    <i class="fas fa-phone"></i>
-    +1 856 526 8438
-  </p>
-
-  <p>
-    <i class="fab fa-linkedin"></i>
-    <a href="https://www.linkedin.com/in/pvaishnavi-/" target="_blank">
-      LinkedIn Profile
-    </a>
-  </p>
-
-  <p>
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/vaishnavipeddireddy" target="_blank">
-      GitHub Profile
-    </a>
-  </p>
-</section>
+<script>
+function toggle(btn){
+  let d = btn.nextElementSibling;
+  d.style.display = d.style.display === "block" ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
